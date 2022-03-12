@@ -11,6 +11,8 @@ echo ===========================================================================
 echo.
 echo.
 cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo ============================================================================ & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+echo. 
+pause
 
 :notsupported
 echo. 
