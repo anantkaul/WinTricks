@@ -11,7 +11,6 @@ echo ===========================================================================
 echo.
 echo.
 cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo ============================================================================ & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
-explorer "http://MSGuides.com" & goto halt
 
 :notsupported
 echo. 
@@ -19,5 +18,3 @@ echo ===========================================================================
 echo Sorry! Your version is not supported.
 echo Please try installing the latest version here: bit.ly/odt2k16
 
-:halt
-pause >nul
