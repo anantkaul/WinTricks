@@ -7,6 +7,8 @@ if %i%==3 set KMS=kms9.MSGuides.com
 if %i%==4 goto notsupported
 cscript //nologo ospp.vbs /sethst:%KMS% >nul&echo ============================================================================&echo.&echo.
 cscript //nologo ospp.vbs /act | find /i "successful" && echo. && echo ============================================================================
+goto halt
 :notsupported
 echo.&echo ============================================================================&echo Sorry! Your version is not supported.&echo Please try installing the latest version here: bit.ly/odt2k16
-
+:halt
+pause > nul
