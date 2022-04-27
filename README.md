@@ -1,7 +1,7 @@
 # WinTricks
 
 ## Setup Fresh Windows with needed softwares ...
-
+Test
 For PowerShell ...
 ```ps
 Set-ExecutionPolicy RemoteSigned
