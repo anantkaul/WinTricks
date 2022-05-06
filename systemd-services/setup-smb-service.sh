@@ -2,7 +2,7 @@
 
 echo -e " >> Setting up smbserver as systemd service ..."
 
-mkdir /opt/smb-files
+sudo mkdir /opt/smb-files
 sudo curl https://raw.githubusercontent.com/anantkaul/WinTricks/main/systemd-services/smbserver.service) -o /etc/systemd/system/smbserver.service
 sudo systemctl enable smbserver
 sudo systemctl start smbserver
